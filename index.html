@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  <div class="tic-tak" style="margin-top:100px ; text-align: center ;">
+    <h1><b>TIC TAK</b> </h1>
+    <diV id="userinput">
+        <input type="text" placeholder="Enter First User"  id="firstUser" style="border: 2px solid black; border-radius: 20px; width: 200px;"/>
+        <input type="text" placeholder="Enter Second User" id="secondUser" style="border: 2px solid black; border-radius: 20px; width: 200px;" />
+    
+        <button  style="width: 150px; background-color: blue; border-radius: 10px; color: aliceblue;" onclick="StartGame()">Start Game</button>
+    </diV>
+
+    <br/>
+    <table id="game" style="display: none;margin: auto ;text-align: center">
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
